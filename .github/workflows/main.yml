@@ -14,7 +14,7 @@ jobs:
         with:
           # GitHub event payload
           # https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#release
-          tweet-message: "New ${{ github.event.repository.name }} ! ${{ github.event.release.html_url }} #golang #bbgo #crypto #trading #bot"
+          tweet-message: "New ${{ github.event.repository.name }} ! ${{ github.event.repository.html_url }} #golang #bbgo #crypto #trading #bot"
         env:
           # Get your tokens from https://developer.twitter.com/apps
           TWITTER_CONSUMER_API_KEY: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
